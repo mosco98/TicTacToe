@@ -12,6 +12,10 @@
   /* font-weight: bold; */
 }
 
+.board {
+  width: 30%;
+}
+
 .square:hover {
   background: #eee;
   transition: all 0.1s ease-in-out;
@@ -44,22 +48,21 @@
   bottom: 0;
   padding: 10px;
   text-align: center;
-  background:white;
 }
 
-@media only screen and (min-width: 569px) {
+/* @media only screen and (min-width: 569px) {
   .main-ctn {
     padding: 0px;
   }
-}
+} */
 
-@media only screen and (max-width: 769px) {
+/* @media only screen and (max-width: 769px) {
   .main-ctn {
     height: 100%;
   }
 
   .board {
-    min-width: 80%;
+    min-width: 80px;
   }
 
   .square {
@@ -71,18 +74,20 @@
   .footer {
     font-size: 12px;
   }
+} */
+
+@media (max-width: 997px) and (min-width: 851px) {
+  .board {
+    min-width: 350px;
+  }
 }
 
 @media screen and (max-width: 850px) {
-  .square {
-    width: 80px;
-    height: 80px;
+  .board {
+    min-width: 300px;
   }
-}
-
-@media screen and (max-width: 350px) {
-  .square {
-    width: 75px;
-    height: 75px;
-  }
+  /* .square {
+    width: 70px;
+    height: 70px;
+  } */
 }
