@@ -44,6 +44,7 @@
   bottom: 0;
   padding: 10px;
   text-align: center;
+  background:white;
 }
 
 @media only screen and (min-width: 569px) {
@@ -69,5 +70,19 @@
 
   .footer {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .square {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .square {
+    width: 75px;
+    height: 75px;
   }
 }

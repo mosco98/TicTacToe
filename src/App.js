@@ -75,7 +75,7 @@ export default class App extends Component {
         showModal: true
       })
     }
-    console.log(this.gameState.totalMoves)
+    // console.log(this.gameState.totalMoves)
     // console.log(this.state.board)
   }
 
@@ -115,8 +115,7 @@ export default class App extends Component {
         {gameEnded ? null : <p className="mb-5">{playerTurnLine}</p>}
         <div
           className="board container w-30 d-flex flex-wrap align-items-center justify-content-center"
-          onClick={this.handleClick}
-        >
+          onClick={this.handleClick}>
           <div className="square" data-square="0"></div>
           <div className="square" data-square="1"></div>
           <div className="square" data-square="2"></div>
